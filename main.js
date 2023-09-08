@@ -21,7 +21,7 @@ var options = {
     show: false
   },
   zoom: {
-    enabled: false
+    enabled: true
   }
 },
 dataLabels: {
@@ -85,6 +85,19 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 1000)
 })
 
+
+const buttondarkMode = document.querySelector('#backgorundChange');
+
+buttondarkMode.addEventListener('click', ()=>{
+  let currentTheme = document.body.getAttribute("data-theme");
+  let targetTheme = "light";
+
+  if (currentTheme === "light") {
+        targetTheme = "dark";
+  }
+  document.body.setAttribute('data-theme', targetTheme)
+
+}) 
 
 
   
