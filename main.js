@@ -31,7 +31,7 @@ stroke: {
   curve: 'smooth'
 },
 title: {
-  text: 'Dynamic Updating Chart',
+  text: 'Gráfico Temperatura',
   align: 'left'
 },
 markers: {

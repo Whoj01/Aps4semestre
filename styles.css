@@ -23,23 +23,21 @@ body[data-theme='light']{
   background: var(--lightBackground);
   font-size: 1.6rem;
   align-items: start;
-}
-body[data-theme='dark']{
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  max-width: 100vw;
-  background: var(--darkBackgorund);
-  font-size: 1.6rem;
-  align-items: start;
+  overflow: hidden;
 }
 
 header{
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 35px;
-  background: rgba(100, 100, 111, 0.2);
+  min-height: 50px;
+  background: rgba(51, 51, 54, 0.589);
+  z-index: 2;
+}
+#backgorundChange{
+
+  border: none;
+  background: transparent;
 }
 
 /*Container*/
@@ -55,6 +53,7 @@ header{
   gap: 2rem;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 2;
 }
 
 /*graficos*/
@@ -95,8 +94,8 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
-  max-height: 600px;
+  gap: 2.5rem;
+  max-height: 700px;
   width: 30%;
 }
 
@@ -125,6 +124,7 @@ header{
 }
 
 .container .temps > div h1 {
+  font-size: 3.5em;
   text-align: center;
 }
 
