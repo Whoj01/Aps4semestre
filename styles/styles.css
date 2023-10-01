@@ -38,6 +38,8 @@ header{
 
   border: none;
   background: transparent;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
 /*Container*/
